@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- Including Font Awesome icons -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- Including Bootstrap CSS for responsive design -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Including custom main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+
+    <div class="container">
+        <!-- Search box for user to enter location -->
+        <div class="search">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Enter Your Location">
+            <button id="searchBtn" class="fa-solid fa-magnifying-glass"></button>
+        </div>
+
+        <!-- Weather information box -->
+        <div id="weatherBox" class="weather-box">
+            <div class="box">
+                <div class="info">
+                    <div class="weather">
+                        <img src="images/cloud.png" alt="">
+                        <p class="temp">0 <span>°C</span></p>
+                        <p class="desc">Broken Clouds</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional weather details -->
+        <div id="weatherDetails" class="weather-details">
+            <!-- Humidity information -->
+            <div class="humidity">
+                <i class="fa-solid fa-water"></i>
+                <div class="text">
+                    <div class="info-humidity">
+                        <span>0%</span>
+                    </div>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <!-- Wind speed information -->
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <div class="info-wind">
+                        <span>0Km/h</span>
+                    </div>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Message for location not found -->
+        <div class="not-found">
+            <div class="box">
+                <img src="images/404.png" alt="">
+                <p>Oops! Location not found!</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Including Bootstrap JS bundle -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Including custom main JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
